@@ -1,0 +1,5 @@
+// Common-Controls v6 manifest for test/example executables.
+// tauri-build only embeds its manifest into bins; without this, tests that link
+// tauri fail at startup with STATUS_ENTRYPOINT_NOT_FOUND (TaskDialogIndirect).
+#define RT_MANIFEST 24
+1 RT_MANIFEST "test-manifest.xml"

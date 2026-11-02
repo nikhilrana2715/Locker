@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Frontend build output
+dist/
+*.tsbuildinfo
+
+# Rust / Tauri build output
+src-tauri/target/
+src-tauri/gen/apple/
+src-tauri/gen/android/
+
+# Local run / debug logs
+run_stdout.txt
+run_stderr.txt
+*.log
+
+# Environment & editor
+.env
+.env.local
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
