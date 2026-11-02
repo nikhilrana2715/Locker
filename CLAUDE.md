@@ -540,3 +540,19 @@ the relevant section above** so sections 3-9 never go stale.
   `wmi` dependency and the `PLAN.md` WMI-event-sink claim. No build or test command
   was run this session (documentation-only change), so the Rust/TS verification bar
   in section 7 still needs a clean run after the next code change.
+
+### 2026-11-02 — README written
+- **Did:** Replaced the placeholder `# Locker` README with full public-facing
+  documentation: what Quick Lock does and why, the feature set, the system process
+  denylist and other safety guarantees, the at-rest encryption envelope, install and
+  build-from-source instructions, an ASCII interception-flow diagram, the project
+  structure, and pointers to `CLAUDE.md` / `PLAN.md` / `PROGRESS.md`.
+- **Files:** `README.md`.
+- **Verified:** Content cross-checked against the source (denylist contents, grace
+  period values, lockout numbers, watcher sleep intervals, config path, npm/cargo
+  script names); pushed and confirmed on `origin/main`.
+- **Open:** The README advertises `QuickLock-Setup.exe` from the repository — once
+  those committed binaries drift from source (section 9, item 7), that download
+  becomes misleading. Moving them to GitHub Releases would fix both problems. The
+  repository still has no LICENSE file, so the README deliberately makes no
+  licensing claim.
